@@ -1,3 +1,7 @@
+setTimeout(function(){
+        $('.loader').fadeToggle(1000);
+    
+    },2000);
 const buttons=document.querySelectorAll('a');
 buttons.forEach(btn=>{
     btn.addEventListener('click',function(e){
