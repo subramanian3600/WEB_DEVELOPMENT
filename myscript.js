@@ -1,11 +1,7 @@
-setTimeout(function(){
-        $('.loader').fadeToggle(1000);
-    
-    },2000);
 const buttons=document.querySelectorAll('a');
 buttons.forEach(btn=>{
     btn.addEventListener('click',function(e){
-        let x=e.clientX-e.target.offserLeft;
+        let x=e.clientX-e.target.offsetLeft;
         let y=e.clientY-e.target.offsetTop;
 
         let ripples=document.createElement('span');
@@ -19,3 +15,10 @@ buttons.forEach(btn=>{
 
     })
 })
+
+
+
+
+
+
+
