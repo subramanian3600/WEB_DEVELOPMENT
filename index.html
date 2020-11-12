@@ -1,36 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Repo</title>
-    <link rel="icon" href="lllogo.png" type="image/icon type">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
+<script type="text/javascript">
+            function clock(){
+                
+                var h= new Date().getHours();
+                var m= new Date().getMinutes();
+                var s= new Date().getSeconds();
+                var am='AM';
 
-    <header>
-        
-    <nav>
-        <label id="title" class="title">Learning Repo</label>
-        <ul class="pages">
-            <li><a href="#" id="Home" class="home">Home</a></li>
-            <li><a href="#" id="Gallery" class="Gallery">Gallery</a></li>
-            <li><a href="#" id="Contact_as" class="Contact_as">Contact as</a></li>
-        </ul>
-    </nav>
-    <div class="clearfix">
-    </header>
-    <div  class="cont">
-    <div class="cont_1">
-        <p class="con_1"><b>Title: </b><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, corrupti repellendus? Sequi omnis consequatur laudantium deleniti ab, porro repellat corporis deserunt odit harum fugit quos nostrum quam aliquid blanditiis dicta?</p>
-    </div>
-    <div class="cont_2">
-        <p class="con_2"><b>Title: </b><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, corrupti repellendus? Sequi omnis consequatur laudantium deleniti ab, porro repellat corporis deserunt odit harum fugit quos nostrum quam aliquid blanditiis dicta?</p>    </div>
+                if(m<10){
+                    m='0'+m;    
+                }
+                
+                if(s<10){
+                    s='0'+s;
+                }
+                if(h>12){
+                    var am='PM';
+                    h-=12; 
+                    if(h<10){
+                        h='0'+h;    
+                    }
+                }
 
-    </div>
-    
-    <script src="myscript.js"></script>
-</body>
-</html>
+                let hours=document.getElementById('hour').innerHTML=h;
+                let minutes=document.getElementById('minutes').innerHTML=m;
+                let seconds=document.getElementById('seconds').innerHTML=s;
+                let period=document.getElementById('period').innerHTML=am;
+                
+
+                
+            }
+            var interval=setInterval(clock,1000);
+        </script>
+
+        <div class="datetime">
+            <div class="time">
+                <div ><span id="hour" class="hour">00</span></div>
+                <div ><span id="minutes" class="minutes">00</span></div>
+                <div ><span id="seconds" class="seconds">00</span></div>
+                <div ><span id="period">AM</span></div>
+            </div>
+        </div>
