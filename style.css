@@ -145,7 +145,7 @@ header{
     display: inline-block;
     margin: 10px 6px;
     padding: 10px 25px;
-    color: black;
+    color: white;
     border-radius: 10px;
     background:transparent;
     overflow: hidden;
@@ -160,6 +160,7 @@ header{
     border-radius: 10px;
     transition: 0.5s;
 }
+
 .clearfix{
     clear: both;
 }
