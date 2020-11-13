@@ -28,6 +28,7 @@ body{
     display: inline-flex;
     border: 3px solid white;
     border-radius: 8px;
+    margin-top: 10px;
 }
 .time{
     font-size: 28px;
@@ -114,7 +115,8 @@ body{
 header{
     position: relative;
     max-width: 1000;
-    background-color:transparent;
+    background-color:black;
+    opacity: 0.8;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -157,18 +159,6 @@ header{
     color: white;
     border-radius: 10px;
     transition: 0.5s;
-}
-/*social media*/
-.social_media{
-    float:left;
-    list-style-type: none;
-    display: flex;
-}
-.social_media li a{
-    display: block;
-    margin: 10px 0;
-    padding: 10px 20px;
-    color: azure;
 }
 .clearfix{
     clear: both;
@@ -299,7 +289,7 @@ li span{
     color: white;
 
 }
-input{
+.contact_form input{
     margin: 10px;
     width: 70%;
     height:30px;
@@ -311,11 +301,11 @@ input{
     font-size: 16px;
     font-weight: bold;
 }
-input::placeholder{
+.contact_form input::placeholder{
     color:white;
     font-size:15px;
 }
-textarea{
+.contact_form textarea{
     margin: 10px;
     width: 70%;
     background-color: rgba(136, 133, 133,0.5);
@@ -326,12 +316,12 @@ textarea{
     font-size: 16px;
     font-weight: bold;
 }
-textarea::placeholder{
+.contact_form textarea::placeholder{
     color:white;
     font-size:15px;
 
 }
-.submit{
+.contact_form .submit{
     width:100px;
     outline: none;
     padding: 5px;
@@ -339,12 +329,100 @@ textarea::placeholder{
     cursor: pointer;
     
 }
-.reset{
+.contact_form .reset{
     width:100px;
     outline: none;
     padding: 5px;
     margin: 10px;
     cursor: pointer;
+}
+/*account*/
+.container-account{
+    width: 60%;
+    margin: auto;
+    background-color: transparent;
+    height: 500px;
+
+}
+.img_login{
+    background-color: #fbae17;
+    width: 50%;
+    height: 500px;
+    float: left;
+    background-image: url(brown_shade.png);
+    background-size: cover;
+    background-position: center;
+}
+.login{
+    position: relative;
+    background-color:black;
+    opacity: 0.8;
+    width: 50%;
+    height: 500px;
+    float: right;
+}
+.login h2{
+    color: #fff;
+    margin: 90px 0px 20px 30px;
+}
+.login label{
+    margin: 10px 0px 0px 40px;
+    color: white;
+    font-size: 17px;
+
+}
+.login input{
+    margin: 6px 0px 0px 40px;
+    width: 250px;
+    height:25px;
+    border-radius: 5px;
+}
+.login input:hover{
+    border: #fbae17 solid 2px;
+}
+.login button{
+    background-color: #3b8d99;
+    border:white 2px solid;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    margin: 20px 0px 0px 40px;
+    border-radius: 5px;
+}
+.login button:hover{
+    border: #fbae17 solid 2px;
+}
+.login p{
+    color: #fff;
+    margin: 20px 0px 0px 40px;
+}
+.login a{
+    color: #fbae17;
+}
+/*social media*/
+.social_media{
+    float:left;
+    list-style-type: none;
+    display: flex;
+}
+.social_media a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: azure;
+}
+.foot{
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height:100px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.foot p{
+    color:white;
+    text-align: center;
+    padding: 30px;
 }
 
 
